@@ -30,30 +30,7 @@ select* from retail_sales
 
 Select COUNT(*) FROM Retail_Sales
 
---Data Cleaning
-select*from Retail_Sales
-where 
-	transactions_id is null
-	or
-	sale_date is null
-	or 
-	sale_time is null
-	or 
-	customer_id  is null
-	or 
-	gender is null
-	or
-	age is null
-	or 
-	category is null
-	or 
-	quantiy is null
-	or 
-	price_per_unit is null
-	or 
-	cogs is null
-	or
-	total_sale is null
+
 ```
 
 ### 2. Data Exploration & Cleaning
