@@ -23,22 +23,37 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
-CREATE DATABASE p1_retail_db;
+create database Project
+use project
 
-CREATE TABLE retail_sales
-(
-    transactions_id INT PRIMARY KEY,
-    sale_date DATE,	
-    sale_time TIME,
-    customer_id INT,	
-    gender VARCHAR(10),
-    age INT,
-    category VARCHAR(35),
-    quantity INT,
-    price_per_unit FLOAT,	
-    cogs FLOAT,
-    total_sale FLOAT
-);
+select* from retail_sales
+
+Select COUNT(*) FROM Retail_Sales
+
+--Data Cleaning
+select*from Retail_Sales
+where 
+	transactions_id is null
+	or
+	sale_date is null
+	or 
+	sale_time is null
+	or 
+	customer_id  is null
+	or 
+	gender is null
+	or
+	age is null
+	or 
+	category is null
+	or 
+	quantiy is null
+	or 
+	price_per_unit is null
+	or 
+	cogs is null
+	or
+	total_sale is null
 ```
 
 ### 2. Data Exploration & Cleaning
